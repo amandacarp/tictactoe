@@ -6,12 +6,12 @@ for (let i = 0; i < cells.length; i++){
 }
 
 // toggle between "X" and "O"
-function cellClicked( event ) {
-    if( clickCount % 2 === 0 && event.target.textContent !== "O" ) {
-         event.target.textContent = "X";
-         ++clickCount;
-    } else if( clickCount % 2 === 1 && event.target.textContent !== "X" )
-    {
-         event.target.textContent = "O";
-         ++clickCount;
-    }};
+    function cellClicked () {
+        if (clickCount % 2 === 0){
+            event.target.textContent = "X";
+            ++clickCount
+    } else if (clickCount % 2 === 1){
+        event.target.textContent = "O";
+        ++clickCount
+    }}
+    
