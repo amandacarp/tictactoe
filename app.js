@@ -5,10 +5,7 @@ for (let i = 0; i < cells.length; i++){
     cells[i].addEventListener("click", cellClicked);
 }
 
-function cellClicked () {
-    event.target.textContent = "X"
-}
-
+// toggle between "X" and "O"
 function cellClicked( event ) {
     if( clickCount % 2 === 0 && event.target.textContent !== "O" ) {
          event.target.textContent = "X";
