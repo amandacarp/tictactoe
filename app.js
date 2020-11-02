@@ -66,7 +66,7 @@ function cellClicked(event) {
 
     //alert game over
     if (gameOver === true) {
-        alert("GAME OVER!")
+        alert("GAME OVER!"), location.reload();
     }
 
 }
