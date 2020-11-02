@@ -19,22 +19,24 @@
 }
 
 .top{
-    border-bottom: 1px black solid;
+    border-bottom: 1px white solid;
 }
 
 .bottom{
-    border-top: 1px black solid;
+    border-top: 1px white solid;
 }
 
 .left{
-    border-right: 1px black solid;
+    border-right: 1px white solid;
 }
 
 .right{
-    border-left: 1px black solid;
+    border-left: 1px white solid;
 }
 h1{
     font-family: 'Turret Road', cursive;
+    font-size: 3em;
+    color: rgb(187, 141, 164);
 
 }
 
@@ -43,11 +45,11 @@ h1{
     clear: right;
     width: 100px;
     height: 100px;
-    background-color: #f8F9fa;
+    background-color: rgb(197, 117, 117);
     margin: auto;
     text-align: center;
     vertical-align: middle;
-    color: #343a40;
+    color: white;
     line-height: 100px;
     font-size: 5rem;
 }
