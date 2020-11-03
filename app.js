@@ -9,6 +9,10 @@ for (let i = 0; i < cells.length; i++) {
 
 // toggle between "X" and "O"
 function cellClicked(event) {
+
+    if (gameOver === true){
+        alert("GAME OVER!"), location.reload()
+    }
     //anti cheat 
     if (event.target.textContent === "X" || event.target.textContent === "O") {
         return
@@ -62,11 +66,6 @@ function cellClicked(event) {
         alert("O HAS WON!"), gameOver = true
     } else if (clickCount === 9) {
         alert("DRAW!"), gameOver = true
-    }
-
-    //alert game over
-    if (gameOver === true) {
-        alert("GAME OVER!"), location.reload();
     }
 
 }
